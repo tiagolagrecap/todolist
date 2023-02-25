@@ -1,0 +1,44 @@
+{% extends 'todolist/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Index</title>
+
+
+
+</head>
+<body>
+
+<form method="POST" action="">
+    {% csrf_token %}
+<div class="center-column">
+
+
+
+<div class="table-responsive">
+           <table class="table table-sm table-bordered">
+               <thead>
+                   <tr>
+                   <th class="text-center" scope="col">{{form.name}}</th>
+
+                   </tr>
+               </thead>
+
+               <input  class="btn btn-primary" type="submit">
+
+           </table>
+       </div>
+
+   </div>
+
+
+      </form>
+</body>
+</html>
+
+{% endblock %}
